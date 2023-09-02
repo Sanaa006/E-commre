@@ -1,0 +1,329 @@
+/* Start main rulez */
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kalam:wght@400;700&display=swap');
+body{
+/*     background: radial-gradient(ellipse at top, #f1d1d1, transparent),
+    radial-gradient(ellipse at bottom, #6b7d6b, transparent);
+ */background-color: #f4f5f9;
+    font-size: 16px;
+    min-height: 100vh;
+    --sb-track-color: #d3dbde;
+    --sb-thumb-color: #4a695a;
+    --sb-size: 15px;
+  
+    scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color);
+} 
+body::-webkit-scrollbar {
+width: var(--sb-size) 
+}
+
+body::-webkit-scrollbar-track {
+background: var(--sb-track-color);
+border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+background: var(--sb-thumb-color);
+border-radius: 10px;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+/* End main rulez */
+/* start login form */
+.login{
+    
+    width: 300px;
+    margin: 120px auto;
+}
+.login input{
+    margin-bottom: 20px;
+}
+.login .form-control{
+    background-color: #eaeaea;
+}
+.login .btn{
+    width:300px;
+    background-image: linear-gradient(90deg,#57a5ea,#088dde);
+    box-shadow: 0 0 0 10 #088dde;
+    opacity: 0.7;
+    font-family: 'Kalam', cursive;
+    font-size: 1.4em;
+}
+.login .btn:hover{
+    opacity: 1;
+}
+
+.text-center{
+    margin-bottom: 25px;
+    font-size: 40px;
+    color: #353434;
+    font-weight: 700;
+    font-family: 'Kalam', cursive;
+    letter-spacing: -2;
+}
+
+/* End login form */
+/* start bootstrap navbar Edits */
+.navbar {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-bottom: 0px;
+    background-color: transparent;
+}
+ .navbar-inverse {
+  
+    border-color: #08080800; 
+    color:black;
+} 
+.navbar-inverse .navbar-nav>.open>a, 
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus {
+    color: #000;
+    background-color: #08080800;
+}
+.navbar-brand{
+    font-size: 1.3em;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+    color: #000;
+}
+.navbar-brand{
+    padding: 18px 20px 8px;
+    margin-left: 5px;
+}
+.nav>li>a{
+    padding: 18px 10px 8px;
+    color: #353434;
+}
+.dropdown-menu{
+    top: 95%;
+    min-width: 180px;
+    text-align: center ;
+    font-size: 0.9em;
+    border-radius: 10px;
+    background-color: #64838030;
+    border: none;
+    padding:0px;
+}
+.dropdown-menu>li>a{
+    padding: 10px 15px;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #009688b8;
+}
+.navbar-inverse .navbar-nav>li> .link:hover, .navbar-inverse .navbar-nav>li> .link:focus {
+    color: black;
+    background-color: transparent;
+    border-bottom: 2px solid #009688;
+    
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+    color: black;
+    background-color: #00968800;
+    
+}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret,
+.navbar-inverse .navbar-nav>.open>a .caret, 
+.navbar-inverse .navbar-nav>.open>a:hover .caret,
+.navbar-inverse .navbar-nav>.open>a:focus .caret {
+    border-top-color: #000;
+}
+/* End bootstrap navbar Edits */
+/* Start dashboard page */
+.home-stats{
+    text-align: center;
+}
+
+.home-stats .stat{
+    margin-top: 20px;
+    font-weight: bold;
+    color: #292929ae;
+    background-color: #eee;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 15px;
+    box-shadow:  -9px 9px 18px #c3c3c3,
+             9px -9px 18px #fdfdfd;
+}
+.home-stats .stat a{
+    color: #292929ae;
+    text-decoration: none;
+}
+.st-member{
+    background-image: linear-gradient(45deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+.st-pandings{
+    background: linear-gradient(45deg, #fbc2eb 0%, #a6c1ee 100%); 
+}
+.st-items{
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+}
+.st-comments{
+    background-image: linear-gradient(45deg, #d9afd9 0%, #97d9e1 100%);
+}
+.home-stats .stat span{
+    display: block;
+    font-size: 50px;
+}
+.latest{
+    margin-top:30px;
+}
+.latest-user{
+    margin-bottom: 0;
+}
+.latest-user li{
+    padding: 6px 15px;
+    font-size: 1.9rem;
+    overflow: hidden;
+}
+.latest-user li:nth-child(odd){
+    background-color: #f4f5f9;
+
+}
+.panel-user {
+    padding: 0px;
+}
+.latest-user .btn{
+    padding: 3px 6px;
+    margin-left:6px ;
+}
+.latest-user .btn-danger{
+    padding: 3px 9px ;
+}
+
+/* End dashboard page */
+/* Start member page */
+
+.show-pass{
+    position: absolute;
+    top: 8px;
+    right: -20px;
+    font-size: 23px;
+}
+.form-search{
+    margin-bottom: 0px;
+}
+.search{
+ position: relative;
+}
+.fa-search{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+.main-table{
+ text-align: center;
+ margin-top: 30px;
+ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.main-table td{
+    background-color: #fff;
+    vertical-align: middle !important;
+}
+.main-table .btn{
+    padding: 3px 10px;
+    
+}
+.activate{
+    margin-left: 5px;
+}
+.main-table thead tr td{
+ background-color: #333;
+ color: #fff;
+}
+/* End member page */
+/* Start category page */
+.category .option a{
+    color: #666;
+}
+.category .option span{
+    color: #666;
+    cursor: pointer;
+}
+.category .option .active{
+    color: #009688;
+    font-weight: bold;
+}
+.category .panel{
+    margin-top: 10px;
+}
+
+.category .panel-body{
+    padding: 0px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border: none;
+}
+.category .cat{
+    padding-top: 16px ;
+    padding-left: 20px ;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+.category .cat:hover{
+    background-color:#f4f5f9;
+}
+.category .cat .hidden-buttons {
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    position: absolute;
+    top: 15px;
+    right: -125px;
+}
+.category .cat:hover .hidden-buttons{
+    right: 10px;
+}
+.category .cat .hidden-buttons a{
+    margin-right: 8px;
+}
+.category .cat h3{
+    margin: 0 0 0px;
+    cursor: pointer;
+    font-weight: bold; 
+    color: #535252;
+}
+.category .cat .full-view p{
+    margin: 10px 0 7px;
+    color:#707070;
+}
+.category .cat:last-of-type ~hr{
+    display: none;
+}
+.category  hr{
+    border-top: 1.3px dashed #777 ;
+    margin: 0px ;
+
+}
+.category .cat .visibility,
+.category .cat .Comment,
+.category .cat .ads{
+    color: white;
+    padding: 3px 7px;
+    margin: 0 8px 0px 0px ;
+
+    border-radius: 8px;
+}
+.category .cat .visibility{
+    background-color: #bc0c0ced;
+}
+.category .cat .Comment{
+    background-color: #052233;
+}
+.category .cat .ads{
+    background-color: #009688;
+}
+/* End category page */
